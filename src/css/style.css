@@ -48,6 +48,8 @@ body {
   text-transform: uppercase;
 }
 .heading-primary-main {
+  display: block;
 }
 .heading-primary-sub {
+  display: block;
 }
