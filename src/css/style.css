@@ -100,6 +100,17 @@ body {
     opacity: 1;
   }
 }
+@keyframes move-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -140,4 +151,8 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+.btn-animated {
+  animation: move-up 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
